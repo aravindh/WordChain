@@ -5,31 +5,12 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        //System.out.println("Hello world");
+        //step 1: construct graph such that there is one char change between parent and 
+        //child starting with start word and and other words with same size  
+        //step 2: find the path with start and end word
+        //step 3: get smallest path
     }
 
-    public ArrayList<String> getChain(ArrayList<Integer> indexes, String src, String target) {
-        if(!Dictionary.isDictionaryWord(src))
-        {
-            return null;
-        }
-
-        for (int idx: indexes) {
-            String modified = ;
-
-            modified.charAt(idx) = target.charAt(idx);
-            indexes.remove(idx);
-            ArrayList<String> path = getChain(indexes, src, target);
-            if(!path.isEmpty()) {
-                path.add(0, src);
-                return path;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
-    }
 }
 
